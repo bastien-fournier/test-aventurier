@@ -1,13 +1,13 @@
 // Déclaration de la classe à partir du fichier src
 package src; 
 
-public class Index {
+public class Main {
     public static void main(String[] args) {
         // Vérifie que 2 arguments soit passé coordonnées initiales et mouvements)
         if (args.length != 2) {
-            System.out.println("Usage: java -cp bin src.Index <initialCoordinates> <movements>");
-            System.out.println("Example: java -cp bin src.Index 3,0 SSSSEEEEEENN");
-            System.out.println("Example: java -cp bin src.Index 6,9 OONOOOSSO");
+            System.out.println("Usage: javac -d bin src/*.java <initialCoordinates> <movements>");
+            System.out.println("Example: java -cp bin src.Main 3,0 SSSSEEEEEENN");
+            System.out.println("Example: java -cp bin src.Main 6,9 OONOOOSSO");
             return;
         }
         // Premier argument
