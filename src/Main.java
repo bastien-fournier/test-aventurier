@@ -1,4 +1,4 @@
-// Déclaration de la classe à partir du fichier src
+
 package src; 
 
 public class Main {
@@ -10,23 +10,24 @@ public class Main {
             System.out.println("Example: java -cp bin src.Main 6,9 OONOOOSSO");
             return;
         }
-        // Premier argument
+        
         String initialCoordinates = args[0];
-        // Second argument
+        
         String movements = args[1];
-        // Séparation des coordonnées en x et y
+        
         String[] coordinates = initialCoordinates.split(",");
-        // Conertit x en nombre
+    
         int startX = Integer.parseInt(coordinates[0]);
-        // Convertit y en nombre
+   
         int startY = Integer.parseInt(coordinates[1]);
 
         // Création d'un aventurier => coordonnées initiales
         Adventurer adventurer = new Adventurer(startX, startY);
+        
         // Création de la forêt
         Forest forest = new Forest();
 
-        // Chaque mouvement dans la chaîne de mouvements
+   
         for (char move : movements.toCharArray()) {
             // Déplace l'aventurier
             adventurer.move(move, forest);
